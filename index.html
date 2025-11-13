@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Library</title>
+    <link rel="stylesheet" type="text/css" href="style.css" ; </head>
+
+<body>
+    <header>
+        <h1>Library</h1>
+        <dialog id="dialog">
+            <button class="close-button" id="close-button">Close</button>
+            <form method="dialog" class="book-form">
+                <div>
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title">
+                </div>
+                <div>
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author">  
+                </div>
+                <div>
+                    <label for="pages">Pages:</label>
+                    <input type="text" id="pages" name="pages">  
+                </div>
+                <div class="read-choice">
+                    <label for="has-read">Read:</label>
+                    <input type="radio" id="has-read" name="read" value="Read">    
+                </div>
+                <div class="read-choice">
+                    <label for="has-not-read">Not Read:</label>
+                    <input type="radio" id="has-not-read" name="read" value="Not Read">    
+                </div>
+                
+                <input type="submit" id="submit" class="submit-button" value="submit">
+            </form>
+        </dialog>
+        <button id="add-book" class="header-button">Add New Book</button>
+        <output></output>
+    </header>
+    <div class="container">
+        <main>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Pages</th>
+                            <th>Read</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
